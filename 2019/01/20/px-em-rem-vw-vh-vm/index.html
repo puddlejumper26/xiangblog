@@ -79,18 +79,18 @@
 
 
 
-<meta name="description" content="There are so many different units of size in CSS. These are the differences among them. css3 开始增加了 rem, vh, vw, vm [TOC] pxpx就是pixel的缩写，意为像素。px就是一张图片最小的一个点，一张位图就是千千万万的这样的点构成的，比如常常听到的电脑像素是1024x768的，表示的">
+<meta name="description" content="There are so many different units of size in CSS. These are the differences among them. css3 开始增加了 rem, vh, vw, vm pxpx就是pixel的缩写，意为像素。px就是一张图片最小的一个点，一张位图就是千千万万的这样的点构成的，比如常常听到的电脑像素是1024x768的，表示的是水平方向是">
 <meta name="keywords" content="frontend,CSS">
 <meta property="og:type" content="article">
 <meta property="og:title" content="px,em,rem,%,vw,vh,vm">
 <meta property="og:url" content="https://puddlejumper26.github.io/xiangblog/2019/01/20/px-em-rem-vw-vh-vm/index.html">
 <meta property="og:site_name" content="Xiang&#39;s Blog">
-<meta property="og:description" content="There are so many different units of size in CSS. These are the differences among them. css3 开始增加了 rem, vh, vw, vm [TOC] pxpx就是pixel的缩写，意为像素。px就是一张图片最小的一个点，一张位图就是千千万万的这样的点构成的，比如常常听到的电脑像素是1024x768的，表示的">
+<meta property="og:description" content="There are so many different units of size in CSS. These are the differences among them. css3 开始增加了 rem, vh, vw, vm pxpx就是pixel的缩写，意为像素。px就是一张图片最小的一个点，一张位图就是千千万万的这样的点构成的，比如常常听到的电脑像素是1024x768的，表示的是水平方向是">
 <meta property="og:locale" content="default">
-<meta property="og:updated_time" content="2019-01-20T20:17:40.486Z">
+<meta property="og:updated_time" content="2019-01-20T22:03:59.947Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="px,em,rem,%,vw,vh,vm">
-<meta name="twitter:description" content="There are so many different units of size in CSS. These are the differences among them. css3 开始增加了 rem, vh, vw, vm [TOC] pxpx就是pixel的缩写，意为像素。px就是一张图片最小的一个点，一张位图就是千千万万的这样的点构成的，比如常常听到的电脑像素是1024x768的，表示的">
+<meta name="twitter:description" content="There are so many different units of size in CSS. These are the differences among them. css3 开始增加了 rem, vh, vw, vm pxpx就是pixel的缩写，意为像素。px就是一张图片最小的一个点，一张位图就是千千万万的这样的点构成的，比如常常听到的电脑像素是1024x768的，表示的是水平方向是">
 
 
 
@@ -334,7 +334,7 @@
                   <i class="fa fa-comment-o"></i>
                 </span>
                 <a href="/xiangblog/2019/01/20/px-em-rem-vw-vh-vm/#comments" itemprop="discussionUrl">
-                  <span class="post-comments-count disqus-comment-count" data-disqus-identifier="2019/01/20/px-em-rem-vw-vh-vm/" itemprop="commentCount"></span>
+                  <span class="post-comments-count gitment-comments-count" data-xid="/xiangblog/2019/01/20/px-em-rem-vw-vh-vm/" itemprop="commentsCount"></span>
                 </a>
               </span>
             
@@ -364,7 +364,6 @@
       
         <p>There are so many different units of size in CSS. These are the differences among them.</p>
 <p>css3 开始增加了 rem, vh, vw, vm</p>
-<p>[TOC]</p>
 <h2 id="px"><a href="#px" class="headerlink" title="px"></a>px</h2><p>px就是pixel的缩写，意为像素。px就是一张图片最小的一个点，一张位图就是千千万万的这样的点构成的，比如常常听到的电脑像素是1024x768的，表示的是水平方向是1024个像素点，垂直方向是768个像素点</p>
 <h2 id="em"><a href="#em" class="headerlink" title="em"></a>em</h2><p>参考物是<strong>父元素</strong>的font-size，具有继承的特点。如果自身定义了font-size按自身来计算（浏览器默认字体是16px），整个页面内1em不是一个固定的值。<br>所以如果父元素是 font-size:40px; 自身是0.5em， 自身font-size就是 20px，并且会有连锁效应，比如一级父元素是 40，二级是0.5em,自身是0.5em,那么一级的变化，会带动后两级的变化</p>
 <h2 id="rem"><a href="#rem" class="headerlink" title="rem"></a>rem</h2><p>css3新单位，r是root，相对于<strong>根元素html（网页）</strong>的font-size，不会像em那样，依赖于父元素的字体大小，而造成混乱。rem是CSS3新增的一个相对单位，但相对的只是HTML根元素。通过它既可以做到只修改根元素就成比例地调整所有字体大小，又可以避免字体大小逐层复合的连锁反应。</p>
@@ -449,12 +448,9 @@
 
   
     <div class="comments" id="comments">
-      <div id="disqus_thread">
-        <noscript>
-          Please enable JavaScript to view the
-          <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a>
-        </noscript>
-      </div>
+      
+        <div id="gitment-container"></div>
+      
     </div>
 
   
@@ -743,26 +739,6 @@
 
   
 
-    
-      <script id="dsq-count-scr" src="https://puddlejumper26.disqus.com/count.js" async></script>
-    
-
-    
-      <script type="text/javascript">
-        var disqus_config = function () {
-          this.page.url = 'https://puddlejumper26.github.io/xiangblog/2019/01/20/px-em-rem-vw-vh-vm/';
-          this.page.identifier = '2019/01/20/px-em-rem-vw-vh-vm/';
-          this.page.title = 'px,em,rem,%,vw,vh,vm';
-        };
-        var d = document, s = d.createElement('script');
-        s.src = 'https://puddlejumper26.disqus.com/embed.js';
-        s.setAttribute('data-timestamp', '' + +new Date());
-        (d.head || d.body).appendChild(s);
-      </script>
-    
-
-  
-
 
 
 
@@ -778,8 +754,49 @@
 
 
 
+  
 
 
+
+
+
+
+
+<!-- LOCAL: You can save these files to your site and update links -->
+    
+        
+        <link rel="stylesheet" href="https://aimingoo.github.io/gitmint/style/default.css">
+        <script src="https://aimingoo.github.io/gitmint/dist/gitmint.browser.js"></script>
+    
+<!-- END LOCAL -->
+
+    
+
+    
+      <script type="text/javascript">
+      function renderGitment(){
+        var gitment = new Gitmint({
+            id: window.location.pathname, 
+            owner: 'puddlejumper26',
+            repo: 'https://puddlejumper26.github.io/xiangblog/',
+            
+            lang: "" || navigator.language || navigator.systemLanguage || navigator.userLanguage,
+            
+            oauth: {
+            
+            
+                client_secret: '9cd58e7826cffb39df1a27eaa554e23b1614a787',
+            
+                client_id: '245b4b24cf26135128a2'
+            }});
+        gitment.render('gitment-container');
+      }
+
+      
+      renderGitment();
+      
+      </script>
+    
 
 
 
